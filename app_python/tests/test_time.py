@@ -24,6 +24,7 @@ def test_get_timestamp_timezone():
 def test_response_formatting():
     dt = datetime.now()
     formatted_response = format_datetime_response(dt)
+    
     assert type(formatted_response) is str
     assert json.loads(formatted_response)
     assert "time" in json.loads(formatted_response).keys()
