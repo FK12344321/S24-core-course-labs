@@ -27,4 +27,3 @@ def test_response_formatting():
     assert type(formatted_response) is str
     assert json.loads(formatted_response)
     assert "time" in json.loads(formatted_response).keys()
-
